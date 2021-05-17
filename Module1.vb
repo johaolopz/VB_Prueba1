@@ -1,18 +1,15 @@
 ﻿Module Module1
 
     Sub Main()
-        Dim numero As Integer
-        numero = 12
-        'otra forma es Dim numero As Integer = 12
-        Const PI As Double = 3.1416
-
-        Console.Write("Ingrese un radio: ")
-        Dim radio As Double = Console.ReadLine()
-        Dim area As Double = PI * radio * radio
-
-        Console.WriteLine("El area es: " & area)
-        'La linea acotinuacion es para pausar hasta presionar una tecla
-        'Console.ReadKey(True)"
+        Console.WriteLine("Bienvenidos al Ejercicio ESTUDIANTES")
+        Console.WriteLine("")
+        Console.Write("Ingrese el total de ahorros que dispone en USD (ej. 120,50): ")
+        Dim ahorro As Double = Console.ReadLine()
+        If ahorro >= 600 Then
+            Console.WriteLine("Felicitaciones!!!, Usted puede ir a la U")
+        Else
+            Console.WriteLine("Lo sentimos, ahorre un poco más para la U")
+        End If
 
     End Sub
 
